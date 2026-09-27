@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+/* Smooth custom scrollbars for tactile feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F6F5EE;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C4BE9F;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #133827;
+}
+
+/* Interactive touch / selection highlight */
+::selection {
+  background-color: #133827;
+  color: #FAF9F5;
+}
+
